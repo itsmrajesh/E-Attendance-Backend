@@ -1,6 +1,6 @@
 # Eatten
 Project Name is e-ATTENDANCE MANAGMENT FOR TEACHERS.
-This Project is of Full Stack Web Develpment Project using JAVA.
+This Project is of Full Stack Web Development Project using JAVA.
 In this project technologies used are : 
 1.JSP for FrontEnd
 2.Java as BackEnd
