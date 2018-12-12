@@ -98,7 +98,7 @@
                 <li ><a href="Dashboard.jsp">Home</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li class="active"><a href="password.jsp">Change Password</a></li>
-                <li ><a href="myaccount.jsp">Back</a></li>
+                <li ><a href="myaccount.jsp"><span class="glyphicon glyphicon-arrow-left">Back</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
@@ -107,18 +107,18 @@
         </div>
     </nav>
 
-    <form action="Dashboard.jsp">
+    <form action="pwd">
         <div class="container1">
             <font size="6" color="green" face="courier">
                 CHANGE PASSWORD
             </font>
             <br>
-            <input type="password" required placeholder="Enter Old Password" name="psw" required><br>
-            <input type="password" required placeholder="Enter New Password" name="psw" required><br>
-            <input type="text" required placeholder="Confirm Password" name="psw" required autocomplete="off"><br>
+            <input type="text" placeholder="Enter User Name" name="username" required autocomplete="off"><br>
+            <input type="password" placeholder="Enter old Password" name="psw" required><br>
+            <input type="password" placeholder="Enter New Password" name="npsw" required autocomplete="off"><br>
 
             <button type="submit" class="SUBMITbtn">SUBMIT</button>
-            <form action="Dashboard.jsp"></form>
+            </form>
         </div>
 
 

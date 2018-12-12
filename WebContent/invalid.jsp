@@ -50,7 +50,7 @@ padding-top: 20%;
     <div class="mrc1">
         <br>
         <br>
-<h1>Invalid UserName or Password!  <a href="signup.jsp">Click here</a> to Sign up.</h1>
+<h1>Invalid UserName or Password!  <a href="login.jsp">Click here</a> to Login.</h1>
 </div>
 
     <footer id="footer" class="grid">

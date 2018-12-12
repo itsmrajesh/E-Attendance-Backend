@@ -81,7 +81,7 @@
                 <li><a href="Dashboard.jsp">Home</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li class="active"><a href="mobnumb.jsp">Change Contact Number</a></li>
-                <li ><a href="myaccount.jsp">Back</a></li>
+                <li ><a href="myaccount.jsp"><span class="glyphicon glyphicon-arrow-left">Back</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
@@ -89,15 +89,17 @@
             </ul>
         </div>
     </nav>
-    <form action="Dashboard.jsp">
+    <form action="number">
         <div class="container1">
             <font size="6" color="brown" face="courier">
                 UPDATE PHONE NUMBER<br>
             </font>
-            <input type="number" required name="number"><br>
+            <input type="text" placeholder="Enter User Name" name="username" required autocomplete="off"><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <input type="number" required name="number" placeholder="Enter Phone Number"><br>
 
             <button type="submit" class="SUBMITbtn">SUBMIT</button>
-            <form action="success"></form>
+            </form>
         </div>
 
 

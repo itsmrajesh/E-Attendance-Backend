@@ -98,7 +98,7 @@ a {
     </header>
 
 
-    <form action="login">
+    <form action="login" method="post">
         <div class="container">
             <hr>
             <center><img src="eattan.jpeg" alt="logo" width="350" height="150"></center><br>

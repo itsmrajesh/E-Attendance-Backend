@@ -1,9 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="cc"%>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,7 +12,7 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/vma.css">
-<title>Admin</title>
+<title>Add Attendance</title>
 <style>
 .mrc {color ="green";
 	
@@ -41,6 +37,104 @@ th {
 tr:hover {
 	background-color: #f5f5f5;
 }
+
+.active,.btn:hover {
+	background-color: #666;
+	color: white;
+}
+
+.input-container {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	width: 75%;
+	margin-bottom: 15px;
+}
+
+.icon {
+	padding: 5px;
+	background: dodgerblue;
+	color: #0A0101;
+	min-width: 50px;
+	text-align: center;
+}
+
+input[type=text],input[type=password],input[type=email],input[type=number]
+	{
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input
+[
+type
+=
+text
+]
+:focus
+,
+input
+[
+type
+=
+password
+]
+:focus
+,
+input
+[
+type
+=
+email
+]
+:focus
+,
+input
+[
+type
+=
+number
+]
+:focus
+,
+{
+background-color
+:
+ 
+#ddd
+;
+
+   
+outline
+:
+ 
+none
+;
+
+ 
+}
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.btn1 {
+	background-color: dodgerblue;
+	color: white;
+	padding: 10px 10px;
+	border: none;
+	cursor: pointer;
+	width: 10%;
+	opacity: 0.9;
+}
+
+.btn1:hover {
+	opacity: 1;
+}
 </style>
 </head>
 
@@ -51,56 +145,41 @@ tr:hover {
 			<a class="navbar-brand" href="#">e-Attendance System</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="Dashboard.jsp">Home</a></li>
-			<li class="active"><a href="#"><span
-					class="lyphicon glyphicon-user"></span> View Users </a></li>
-					
+			<li><a href="add.jsp">
+					<button class="active">Add Attendance</button>
+			</a></li>
+
 			<li><span class="glyphicon glyphicon-arrow-left"></span> 
 			
 			<form action="back">
-			<input type="submit" Value="Refresh">
+			<input type="submit" Value="Back">
 			</form>
 			
 			</li>
-			</ul>
+		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="index.jsp"><span
 					class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 		</ul>
 	</div>
 	</nav>
+	<form action="Add">
+		<label for="name"><b>User Name</b></label> <input type="text"
+			placeholder="Enter User Name" name="username" required autocomplete="off">
+			
+
+			
+		<label for="num"><b>Add Attendance Percentage</b></label> <input
+			type="number" placeholder="Enter Percentage" name="attper" 
+			autocomplete="off"> <input type="submit"
+			Value="Add Attendance">
+	</form>
 
 
 
-	<div class="">
-		<h1>Welcome Admin!</h1>
-		<h3>Here I found Some users Data.</h3>
-	</div>
 
-	<div class="container">
-		<table>
-			<tr><th>User ID</th>
-				<th>User Name</th>
-				<th>Mobile Number</th>
-				<th>Email ID</th>
-				<th>Attendance % </th>
-			</tr>
-			<c:forEach items="${users}" var="user">
-				<tr>
-					<td>${user.uid}</td>
-					<td>${user.userName}</td>
-					<td>${user.mobile}</td>
-					<td>${user.email}</td>
-					<td>${user.att}</td>
-				</tr>
-			</c:forEach>
-		</table>
 
-	</div>
-	
-	
-<a href="adduser.jsp"><button class="btn btn-sucess">Add New User</button></a> <br> <br>
-<a href="add.jsp"><button class="btn btn-sucess">Add Attendance to user</button></a>
+
 
 
 
@@ -116,3 +195,4 @@ tr:hover {
 
 </body>
 </html>
+

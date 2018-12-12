@@ -95,7 +95,7 @@
                 return false;
             }
             if (pwd!=cpwd) {
-                document.getElementById('cpasd').innerHTML = "**Password and Confirm Password is not matching ";
+                document.getElementById('cpasd').innerHTML = "**Password and Confirm Password are not matching ";
                 return false;
             }
             if (monum == "") {

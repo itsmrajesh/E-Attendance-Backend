@@ -40,7 +40,7 @@ padding-top: 20%;
             <ul class="nav navbar-nav">
                 <li><a href="Dashboard.jsp">Home</a></li>
                 <li class="active"><a href="#"> View My Attendance </a></li>
-                <li><a href="Dashboard.jsp">Back</a></li>
+                <li><a href="Dashboard.jsp"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.jsp"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>

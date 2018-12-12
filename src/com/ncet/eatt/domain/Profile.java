@@ -6,6 +6,16 @@ public class Profile {
 	private String password;
 	private String email;
 	private String mobile;
+	private int att;
+	
+
+	public int getAtt() {
+		return att;
+	}
+
+	public void setAtt(int att) {
+		this.att = att;
+	}
 
 	public int getUid() {
 		return uid;
